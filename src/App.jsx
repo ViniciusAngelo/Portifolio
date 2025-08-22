@@ -246,18 +246,24 @@ function App() {
             Estou sempre aberto a novas oportunidades e colaborações. Vamos conversar!
           </p>
           <div className="flex justify-center space-x-6">
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
-              <Mail className="w-5 h-5 mr-2" />
-              vinicius.angelo@email.com
+            <Button size="lg" className="bg-blue-600 hover:bg-blue-700" asChild>
+              <a href="mailto:vinicius.g.angelo@gmail.com">
+                 <Mail className="w-5 h-5 mr-2" />
+                vinicius.g.angelo@gmail.com
+              </a>
             </Button>
-            <Button size="lg" variant="outline">
-              <Linkedin className="w-5 h-5 mr-2" />
-              LinkedIn
-            </Button>
-            <Button size="lg" variant="outline">
-              <Github className="w-5 h-5 mr-2" />
-              GitHub
-            </Button>
+            <Button variant="outline" size="sm" asChild>
+                  <a href="https://www.linkedin.com/in/vinicius-gon%C3%A7alves-angelo-949b49215/" target="_blank" rel="noopener noreferrer">
+                    <Linkedin className="w-4 h-4 mr-2" />
+                    LinkedIn
+                  </a>
+              </Button>
+              <Button variant="outline" size="sm" asChild>
+                  <a href="https://github.com/ViniciusAngelo" target="_blank" rel="noopener noreferrer">
+                    <Github className="w-4 h-4 mr-2" />
+                    GitHub
+                  </a>
+              </Button>
           </div>
         </div>
       </section>
@@ -265,7 +271,7 @@ function App() {
       {/* Footer */}
       <footer className="bg-slate-800 text-white py-8 px-4">
         <div className="max-w-6xl mx-auto text-center">
-          <p>&copy; 2024 Vinicius Angelo. Todos os direitos reservados.</p>
+          <p>&copy; 2025 Vinicius Angelo. Todos os direitos reservados.</p>
         </div>
       </footer>
     </div>
