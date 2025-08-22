@@ -3,9 +3,11 @@ import { Button } from '@/components/ui/button.jsx'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card.jsx'
 import { Badge } from '@/components/ui/badge.jsx'
 import { Github, Linkedin, Mail, ExternalLink, Code, Database, Globe, Cpu } from 'lucide-react'
-import profileImage from './assets/profile.jpg'
+import profileImage from './assets/Foto Perfill.jpeg'
 import projectAiImage from './assets/project-ai.jpeg'
 import './App.css'
+import { Cloud } from 'lucide-react'
+import { Network } from 'lucide-react'
 
 function App() {
   const skills = [
@@ -68,13 +70,13 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-      <section className="py-20 px-4">
+      <section className="py-15 px-4">
         <div className="max-w-6xl mx-auto text-center">
           <div className="mb-8">
             <img 
               src={profileImage} 
               alt="Vinicius Angelo" 
-              className="w-32 h-32 rounded-full mx-auto mb-6 object-cover border-4 border-white shadow-lg"
+              className="w-50 h-50 rounded-full mx-auto mb-6 object-cover border-4 border-white shadow-lg"
             />
             <h2 className="text-5xl font-bold text-slate-800 mb-4">
               Olá, eu sou <span className="text-blue-600">Vinicius Angelo</span>
@@ -105,7 +107,9 @@ function App() {
             <div>
               <p className="text-lg text-slate-600 mb-6">
                 Sou um engenheiro da computação com paixão por resolver problemas complexos através da tecnologia. 
-                Tenho experiência em desenvolvimento full-stack, inteligência artificial e arquitetura de sistemas.
+                Além de trabalhar com infraestrutura e suporte, tenho experiência em desenvolvimento de software, 
+                inteligência artificial e arquitetura de sistemas.
+                
               </p>
               <p className="text-lg text-slate-600 mb-6">
                 Minha jornada na tecnologia começou durante a graduação, onde desenvolvi projetos que combinam 
@@ -113,13 +117,17 @@ function App() {
                 oportunidades para crescer profissionalmente.
               </p>
               <div className="flex space-x-4">
-                <Button variant="outline" size="sm">
-                  <Linkedin className="w-4 h-4 mr-2" />
-                  LinkedIn
+              <Button variant="outline" size="sm" asChild>
+                  <a href="https://www.linkedin.com/in/vinicius-gon%C3%A7alves-angelo-949b49215/" target="_blank" rel="noopener noreferrer">
+                    <Linkedin className="w-4 h-4 mr-2" />
+                    LinkedIn
+                  </a>
                 </Button>
-                <Button variant="outline" size="sm">
-                  <Github className="w-4 h-4 mr-2" />
-                  GitHub
+                <Button variant="outline" size="sm" asChild>
+                  <a href="https://github.com/ViniciusAngelo" target="_blank" rel="noopener noreferrer">
+                    <Github className="w-4 h-4 mr-2" />
+                    GitHub
+                  </a>
                 </Button>
               </div>
             </div>
@@ -140,16 +148,16 @@ function App() {
               </Card>
               <Card>
                 <CardContent className="p-6 text-center">
-                  <Database className="w-8 h-8 text-purple-600 mx-auto mb-2" />
-                  <h4 className="font-semibold">Banco de</h4>
-                  <p className="text-sm text-slate-600">Dados</p>
+                  <Network className="w-8 h-8 text-purple-600 mx-auto mb-2" />
+                  <h4 className="font-semibold">Redes</h4>
+                  <p className="text-sm text-slate-600">de computadores</p>
                 </CardContent>
               </Card>
               <Card>
                 <CardContent className="p-6 text-center">
-                  <Globe className="w-8 h-8 text-orange-600 mx-auto mb-2" />
-                  <h4 className="font-semibold">Aplicações</h4>
-                  <p className="text-sm text-slate-600">Web</p>
+                  <Cloud className="w-8 h-8 text-orange-600 mx-auto mb-2" />
+                  <h4 className="font-semibold">Computação</h4>
+                  <p className="text-sm text-slate-600">em nuvem</p>
                 </CardContent>
               </Card>
             </div>
